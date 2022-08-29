@@ -11,3 +11,4 @@
 
  * _Andrea Lenes González_
  * _Camilo Vergel_
+ *_Juan Rivera_
