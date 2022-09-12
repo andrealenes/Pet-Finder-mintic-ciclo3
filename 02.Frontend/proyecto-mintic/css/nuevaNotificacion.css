@@ -1,0 +1,90 @@
+.container-ntf{
+    width: 180px;
+	height: 95vmin;
+	margin: 2vmin auto 0 auto;
+	padding: 6vmin;
+	color: black;
+	border: none;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.9vmin;
+}
+.form-ntf{
+	width: 60vmin;
+	height: 90vmin;
+}
+.form-ntf__label {
+	display: block;
+	margin: 2vmin 0 0 0;
+    background-color: rgba(217, 217, 217, 1);
+}
+.form-ntf__textarea {
+	background-color: rgba(217, 217, 217, 1);
+	padding: 1vmin 10.8vmin;
+    border: none;
+	margin: 16px 0 16px 0;
+	color:black;
+	overflow: auto;
+	resize: none;
+	width: 100%;
+}
+.form-ntf__label,
+.form-ntf__input,
+.form-ntf__button{
+	display: block;
+}
+.form-foto__input {
+	display: block;
+}
+.form-ntf__input {
+	border: 0;
+	background-color: rgba(217, 217, 217, 1);
+	display: block;
+	margin: 20px 0 0 0;
+	width: 100%;
+	height: 38px;
+	color:rgb(112, 112, 112);
+}
+
+.form-ntf__button {
+	display: inline-block;
+	width: 17vmin;
+	height: 5.2vmin;
+	background-color: rgba(130, 192, 227, 1);
+    box-shadow: 0px 4px 8px rgba(4, 4, 4, 0.436);
+	border: none;
+	color: black;
+	position: absolute;
+	margin-top: 18px;
+	left: 6vmin;
+}
+.form-ntf__btncancelar{
+	display: inline-block;
+	width: 17vmin;
+	height: 5.2vmin;
+	background-color:  rgba(130, 192, 227, 1);
+    box-shadow: 0px 4px 8px rgba(4, 4, 4, 0.436);
+	border: none;
+	color: black;
+	position: absolute;
+    margin-top: 18px;
+	right: 6vmin;
+	
+}
+.container-subtitle {
+    margin-top: 75px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.main-title_line {
+    display: block;
+    height: 1px;
+    width: 600px;
+    background-color: rgb(27, 25, 25);
+    margin: 0 auto;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(4, 4, 4, 0.066);
+}

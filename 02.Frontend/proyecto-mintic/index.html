@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pet finder</title>
+</head>
+
+<body>
+        <img  class= "icon"src="assets/imagenes/PetFinder.svg" alt="logo">
+        <a class="main-button" id="main-button" href="#">Crear cuenta</a>
+        <a class="main-button" id="main-button2" href="#">Iniciar sesion</a>
+        <section class="loader">
+            <div></div>
+             <div></div>
+             <div></div>
+        </section>
+        <!-- Modal registro -->
+        <section class="modal hidden">
+            <div class="modal__contentRegistro">
+                <img class="modal__content--close" src="https://img.icons8.com/windows/32/000000/macos-close.png" alt="icon cerrar">
+                <fieldset class="container-register">
+                    <img class="img-container" src="assets/imagenes/add-user.svg" alt="">
+
+                    <form action="#" method="POST" class="form-register">
+                        <label class="form-register__label">
+                            <input type="text" minlength="4" maxlength="15" required name="Nombre"
+                                class="form-register__input" placeholder="Nombre" />
+                        </label>
+                        <label class="form-register__label">
+                            <input type="text" minlength="4" maxlength="15" required name="Apellido"
+                                class="form-register__input" placeholder="Apellido" />
+                        </label>
+    
+                        <label class="form-register__label">
+                            <select name="Tipo de documento" class="form-register__input form-register__input--background"
+                                required >
+                                <option value="Tipo de documento">Tipo de documento</option>
+                                <option value="Cedula">Cedula</option>
+                                <option value="Cedula extranjera">
+                                    Cedula extranjera
+                                </option>
+                            </select>
+                        </label>
+    
+                        <label class="form-register__label">
+                            <input type="text" required minlength="6" maxlength="12" name="Numero documento"
+                                class="form-register__input" placeholder="Numero de documento" />
+                        </label>
+    
+                        <label class="form-register__label">
+                            <input type="list" list="Ciudades" class="form-register__input" required placeholder="Ciudad" />
+                            <datalist id="Ciudades" name="Ciudad" class="form-datalist">
+                                <option value="Arauca" class="form-datalist__option"></option>
+                                <option value="Armenia" class="form-datalist__option"></option>
+                                <option value="Barranquilla" class="form-datalist__option"></option>
+                                <option value="Bogota" class="form-datalist__option"></option>
+                                <option value="Bucaramanga" class="form-datalist__option"></option>
+                                <option value="Cartagena" class="form-datalist__option"></option>
+                                <option value="Cali" class="form-datalist__option"></option>
+                                <option value="Cucuta" class="form-datalist__option"></option>
+                                <option value="Monteria" class="form-datalist__option"></option>
+                                <option value="Montoa" class="form-datalist__option"></option>
+                                <option value="Pasto" class="form-datalist__option"></option>
+                                <option value="Pereira" class="form-datalist__option"></option>
+                            </datalist>
+                        </label>
+    
+                        <label class="form-register__label">
+                            <input type="email" minlength="4" maxlength="15" required name="correo"
+                                class="form-register__input" placeholder="Correo" />
+                        </label>
+    
+                        <label class="form-register__label">
+                            <input type="password" minlength="4" maxlength="15" required name="contraseña"
+                                class="form-register__input" placeholder="Contraseña" />
+                        </label>
+    
+                        <p class="form-register__conditions">
+                            <input type="checkbox" name="condiciones" required />
+                            Acepto los
+                            <a href="#" class="form-register__conditions form-register__conditions--color">
+                                terminos
+                            </a>
+                            y
+                            <a href="#" class="form-register__conditions form-register__conditions--color">
+                                condiciones del servicio
+                            </a>
+                        </p>
+    
+                        <a class="form-register__btn" >Registrarme</a>
+                    </form>
+                </fieldset>
+            </div>
+            
+        </section>
+<!-- ---------------------------modal Login ---------------------------------->
+        <section class="modal2 hidden2">
+            <div class="modal__contentLogin">
+                <img class="modal__content--close2" src="https://img.icons8.com/windows/32/000000/macos-close.png" alt="icon cerrar">
+                <fieldset class="container-login">
+                    <img class="img-container__login" src="assets/imagenes/user.svg" alt="">
+                    <form action="#" method="POST" class="form-login">
+                        <label class="form-login__label">
+                            <input type="email" minlength="4" maxlength="15" required name="correo" class="form-login__input" placeholder="Correo" />
+                        </label>
+                        <label class="form-login__label">
+                            <input type="password" minlength="4" maxlength="15" required name="contraseña"
+                                class="form-login__input" placeholder="Contraseña" />
+                        </label>
+                        <p class="form-login__link">
+                            <a href="/recuperacion/" class="form-login__link">
+                                ¿Haz olvidado la contraseña?
+                            </a>
+                        </p>
+                        <a class="form-login__btn" href="vistas/inicio.html" >Iniciar sesion</a>
+                        <a href="#main-button2" class="form-login__btnRegister">
+                            Crear cuenta
+                        </a>
+                    </form>
+                </fieldset>
+            </div>
+            
+        </section>
+        
+    <!-- </main> -->
+</body>
+<script src="/js/index.js"></script>
+
+</html>

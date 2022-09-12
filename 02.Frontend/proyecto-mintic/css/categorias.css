@@ -1,0 +1,135 @@
+:root {
+    /* Colores */
+    --blue-button: rgba(120, 184, 198, 0.749);
+    --header: rgba(246, 243, 240, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+/* ------------------------Header---------------- */
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: var(--header);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.097);
+}
+
+header img {
+    position: relative;
+    width: 150px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.header-search {
+    display: flex;
+    position: relative;
+    float: right;
+    width: 300px;
+    height: 30px;
+    margin: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.875);
+
+
+
+}
+.header-user{
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 32px;
+    float: right;
+    margin: 10px;
+    
+}
+.header-lupa{
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 22px;
+    float: right;
+
+}
+
+/* -----------------------------Main----------------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main-section {
+    position: relative;
+    align-self: center;
+}
+
+.main-section img {
+    width: 85px;
+    height: 80px;
+    margin: 31px;
+
+}
+
+.main-section img:hover {
+    width: 86px;
+    height: 81px;
+}
+
+.main-section p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.main-title {
+    margin-top: 75px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.main-title_line {
+    height: 1px;
+    width: 600px;
+    background-color: rgb(27, 25, 25);
+    margin: 0 auto;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(4, 4, 4, 0.066);
+}
+
+
+
+/* ----------------Footer-------------- */
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: var(--header);
+    border-top: 180px;
+
+}
+
+footer p {
+    margin-top: 60px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+}

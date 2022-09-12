@@ -1,0 +1,55 @@
+.section-principal{
+    display: flex;
+    flex-wrap: wrap;
+    height: 140vmin;
+    margin: 35px;
+}
+.article-mascota__title{
+    font-family: 'Open Sans', sans-serif;
+	font-size: 1.9vmin;
+    margin: 10px;
+}
+.article-mascota__description{
+    font-size: 1.5vmin;
+    margin: 10px;
+}
+.article-mascota {
+	display: inline-block;
+	border: none;
+	position: relative;
+	width: 18.9vmax;
+	height: 20vmax;
+	overflow: hidden;
+	padding: 0.9vmax;
+	margin:28px;
+    background-color: rgba(217, 217, 217, 1);
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.253);
+}
+.article-mascota:hover {
+	background-color: rgb(174, 174, 174);
+}
+.article-mascota__image {
+	width: 10.2vmax;
+	display: block;
+	margin: 0 auto 0.8vmax auto;
+}
+
+/* -----------------Agregar--------- */
+
+.main-icon__link {
+	display: block;
+	position: fixed;
+	bottom: 19.2vmin;
+	right: 3vmax;
+	color: var(--font-color);
+	font-size: 2.4vmin;
+}
+.main-icon__link--position {
+	bottom: 25.5vmin;
+    
+}
+.main-icon__img{
+    width: 28px;
+    height: 28px;
+}
+

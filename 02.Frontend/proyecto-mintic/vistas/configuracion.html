@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/categorias.css">
+    <link rel="stylesheet" href="/css/configuracion.css">
+    <link rel="stylesheet" href="/css/publicaciones.css">
+    <title>Configuracion de usuario</title>
+</head>
+
+<body>
+    <header>
+        <a href="../vistas/inicio.html">
+            <img src="/assets/imagenes/logo.svg" alt="logo">
+        </a>
+        <a href="configuracion.html">
+            <img class="header-user" src="/assets/imagenes/user.png" alt="usuario">
+        </a>
+        <input class="header-search" type="textbuscador" id="header-search" placeholder="Buscar...">
+    </header>
+    <main>
+        <section class="section-user">
+            <img src="/assets/imagenes/user.svg" alt="usuario">
+            <nav class="nav-main">
+                <ul class="nav-gestiones">
+                    <li class="nav-gestiones__item">
+                        <a href="publicaciones.html" class="nav-gestiones__link" title="Publicaciones">
+                            Publicaciones
+                        </a>
+                    </li>
+                    <li class="nav-gestiones__item">
+                        <a href="notificacion.html" class="nav-gestiones__link">
+                            Nueva notificación
+                        </a>
+                    </li>
+                    <li class="nav-gestiones__item">
+                        <a href="configuracion.html" class="nav-gestiones__link">
+                            Configuracion
+                        </a>
+                    </li>
+                    <li class="nav-gestiones__item">
+                        <a href="/index.html" class="nav-gestiones__link">
+                            Cerrar sesion
+                        </a>
+                    </li>
+            </nav>
+        </section>
+        <section>
+            <h2 class="container-subtitle">Configuración</h2>
+            <span class="main-title_line"></span>
+            <fieldset class="container-register">
+
+                <form action="#" method="POST" class="form-register">
+                    <label class="form-register__label">
+                        <input type="text" minlength="4" maxlength="15" required name="Nombre"
+                            class="form-register__input" placeholder="Nombre" />
+                    </label>
+                    <label class="form-register__label">
+                        <input type="text" minlength="4" maxlength="15" required name="Apellido"
+                            class="form-register__input" placeholder="Apellido" />
+                    </label>
+
+                    <label class="form-register__label">
+                        <select name="Tipo de documento" class="form-register__input form-register__input--background"
+                            required placeholder="Numero de documento">
+                            <option value="Tipo de documento">Tipo de documento</option>
+                            <option value="Cedula">Cedula</option>
+                            <option value="Cedula extranjera">
+                                Cedula extranjera
+                            </option>
+                        </select>
+                    </label>
+
+                    <label class="form-register__label">
+                        <input type="text" required minlength="6" maxlength="12" name="Numero documento"
+                            class="form-register__input" placeholder="Numero de documento" />
+                    </label>
+
+                    <label class="form-register__label">
+                        <input type="list" list="Ciudades" class="form-register__input" required placeholder="Ciudad" />
+                        <datalist id="Ciudades" name="Ciudad" class="form-datalist">
+                            <option value="Arauca" class="form-datalist__option"></option>
+                            <option value="Armenia" class="form-datalist__option"></option>
+                            <option value="Barranquilla" class="form-datalist__option"></option>
+                            <option value="Bogota" class="form-datalist__option"></option>
+                            <option value="Bucaramanga" class="form-datalist__option"></option>
+                            <option value="Cartagena" class="form-datalist__option"></option>
+                            <option value="Cali" class="form-datalist__option"></option>
+                            <option value="Cucuta" class="form-datalist__option"></option>
+                            <option value="Monteria" class="form-datalist__option"></option>
+                            <option value="Montoa" class="form-datalist__option"></option>
+                            <option value="Pasto" class="form-datalist__option"></option>
+                            <option value="Pereira" class="form-datalist__option"></option>
+                        </datalist>
+                    </label>
+
+                    <label class="form-register__label">
+                        <input type="email" minlength="4" maxlength="15" required name="correo"
+                            class="form-register__input" placeholder="Correo" />
+                    </label>
+
+                    <label class="form-register__label">
+                        <input type="password" minlength="4" maxlength="15" required name="contraseña"
+                            class="form-register__input" placeholder="Contraseña" />
+                    </label>
+
+                    <p class="form-register__conditions">
+                        <input type="checkbox" name="condiciones" required />
+                        Acepto los
+                        <a href="#" class="form-register__conditions form-register__conditions--color">
+                            terminos
+                        </a>
+                        y
+                        <a href="#" class="form-register__conditions form-register__conditions--color">
+                            condiciones del servicio
+                        </a>
+                    </p>
+
+                    <button class="form-register__btn">Actualizar</button>
+                </form>
+            </fieldset>
+        </section>
+
+    </main>
+    <aside class="main-icon">
+        <a href="/vistas/categorias.html" class="main-icon__link main-icon__link--position">
+            <img class="main-icon__img" src="/assets/imagenes/mas.png">
+        </a>
+        <figcaption>Nueva notificacion</figcaption>
+    </aside>
+    <footer>
+        <p>Proyecto mintic- utp</p>
+    </footer>
+</body>
+
+</html>
