@@ -9,7 +9,7 @@
 
 ## ***Realizado por:*** :student:
 
- * _Andrea Lenes González_
+ * _Andrea Lenes González (Frontend)_
  * _Camilo Vergel_
  * _Juan Rivera_
  *_Luis Peñaloza_
