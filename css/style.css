@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
-    background-image: url("../imagenes/fondoParaEscritorio.png");
+    background-image: url("assets/imagenes/fondoParaEscritorio.png");
     background-repeat: no-repeat;
     background-size: cover;
     /* width: 100%;
