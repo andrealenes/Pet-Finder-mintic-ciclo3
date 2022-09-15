@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "02.Frontend\\proyecto-mintic\\.vscode\\mariadb-java-client-3.0.6.jar"
+    ]
+}
