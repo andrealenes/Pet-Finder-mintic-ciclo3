@@ -1,4 +1,4 @@
-package com.petfinder.backend;
+package com.petfinder.backend.petfinder;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
