@@ -56,7 +56,7 @@ public class Usuario {
     @Column(nullable = false)
     private boolean enable;
     
-    public boolean checkPassword(String contasenha){
+    public boolean checkPassword(String contrasenha){
         return this.contrasenha.equals(contrasenha);
     }
 }

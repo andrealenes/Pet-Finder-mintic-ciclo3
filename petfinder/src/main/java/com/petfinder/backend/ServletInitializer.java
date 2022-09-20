@@ -1,5 +1,6 @@
-package com.petfinder.backend.petfinder;
+package com.petfinder.backend;
 
+import com.petfinder.backend.PetfinderApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
