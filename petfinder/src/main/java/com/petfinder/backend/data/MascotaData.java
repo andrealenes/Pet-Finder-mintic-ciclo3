@@ -9,21 +9,21 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-    @Getter
-    @Setter
-    @NoArgsConstructor
-    @AllArgsConstructor
-    @Builder
-    public class MascotaData {
-        
-        private int id;
-        private String nombre;
-        private String tipo;
-        private String raza;
-        private String sexo;
-        private Date fecha_perdida;
-        private String descripcion;
-        private String foto;
-        private List<Usuario> propietarios; /*  revisar */
-        
-    }
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class MascotaData {
+
+    private int id;
+    private String nombre;
+    private String tipo;
+    private String raza;
+    private String sexo;
+    private Date fecha_perdida;
+    private String descripcion;
+    private String foto;
+    private List<UsuarioData> propietarios;
+
+}
