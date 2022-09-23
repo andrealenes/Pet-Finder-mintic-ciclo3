@@ -1,40 +1,39 @@
 package com.petfinder.backend.converters;
-package com.petfinder.backend.entities.Mascota;
-package com.petfinder.backend.data.MascotaData;
 
-import org.springframework.data.annotation.AccessType;
+import com.petfinder.backend.data.MascotaData;
+import com.petfinder.backend.entities.Mascota;
 
 public class MascotaConverter extends Converter <Mascota, MascotaData>{
- 
-    @override
-    public Mascota toEntity(MascotaData object){
-        return Mascota.builder()
+    
+    private UsuarioConverter usuarioConverter = new UsuarioConverter();
+    
+    @Override
+    public Mascota toEntity(MascotaData object) {
+        return object == null ? null : Mascota.builder()
                 .id(object.getId())
                 .nombre(object.getNombre())
                 .tipo(object.getTipo())
-                .raza(object.get.Raza())
+                .raza(object.getRaza())
                 .sexo(object.getSexo())
-                .fecha_perdida(object.getFecha())
+                .fecha_perdida(object.getFecha_perdida())
                 .descripcion(object.getDescripcion())
                 .foto(object.getFoto())
-                .propietarios(object.getPropietarios())
-                .build()            
+                .propietarios(usuarioConverter.toEntity(object.getPropietarios()))
+                .build();
     }
 
-    @override
-    public MascotaData toData(Mascota object){
-        return MascotaData.builder()
+    @Override
+    public MascotaData toData(Mascota object) {
+        return object == null ? null : MascotaData.builder()
                 .id(object.getId())
                 .nombre(object.getNombre())
                 .tipo(object.getTipo())
-                .raza(object.get.Raza())
+                .raza(object.getRaza())
                 .sexo(object.getSexo())
-                .fecha_perdida(object.getFecha())
+                .fecha_perdida(object.getFecha_perdida())
                 .descripcion(object.getDescripcion())
                 .foto(object.getFoto())
-                .propietarios(object.getPropietarios())
-                .build()            
-    }
-
-
+                .propietarios(usuarioConverter.toData(object.getPropietarios()))
+                .build();
+    }    
 }
