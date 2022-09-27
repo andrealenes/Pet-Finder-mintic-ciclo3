@@ -18,7 +18,7 @@ public class MascotaConverter extends Converter <Mascota, MascotaData>{
                 .fecha_perdida(object.getFecha_perdida())
                 .descripcion(object.getDescripcion())
                 .foto(object.getFoto())
-                .propietarios(usuarioConverter.toEntity(object.getPropietarios()))
+                .usuarios(usuarioConverter.toEntity(object.getUsuarios()))
                 .build();
     }
 
@@ -33,7 +33,7 @@ public class MascotaConverter extends Converter <Mascota, MascotaData>{
                 .fecha_perdida(object.getFecha_perdida())
                 .descripcion(object.getDescripcion())
                 .foto(object.getFoto())
-                .propietarios(usuarioConverter.toData(object.getPropietarios()))
+                .usuarios(usuarioConverter.toData(object.getUsuarios()))
                 .build();
     }    
 }

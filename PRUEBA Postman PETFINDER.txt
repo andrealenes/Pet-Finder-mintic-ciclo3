@@ -1,0 +1,97 @@
+ROLE
+insert:
+{
+    "name": "ROOT"
+}
+
+{
+    "name": "ADMINISTRADOR"
+}
+
+{
+    "name": "CLIENTE"
+}
+
+USUARIOS
+
+{
+    "nombre": "Andres",
+    "apellidos": "Perez",
+    "email": "aperez@mail.com",
+    "telefono": "3332211",
+    "contrasenha": "andres1234",
+    "roles": [
+        {"id": 1},
+        {"id": 2}
+        ],
+    "registration": "2022-09-25",
+    "enable": 1
+}
+
+{
+    "nombre": "Carmen",
+    "apellidos": "Garcias Gonzales",
+    "email": "cgarcias@mail.com",
+    "telefono": "3214589",
+    "contrasenha": "carmen1234",
+    "roles": [
+        {"id": 2}
+        ],
+    "registration": "2022-09-26",
+    "enable": 0
+}
+
+{
+    "nombre": "Anna",
+    "apellidos": "Castro Marmol",
+    "email": "acastro@mail.com",
+    "telefono": "11223344",
+    "contrasenha": "anna1234",
+    "roles": [
+        {"id": 1}
+        ],
+    "registration": "2022-09-26",
+    "enable": 1
+}
+MASCOTAS
+insert:
+{
+    "nombre": "firulai",
+    "tipo": "Domestico",
+    "raza": "Pastor Aleman",
+    "sexo": "Macho",
+    "fecha_perdida": "2022-09-26",
+    "descripcion": "Es tamaño mediano",
+    "foto": "/image/firulai.jpg",
+    "usuarios":[
+        {
+            "id":1,
+            "nombre": "Andres",
+            "apellidos": "Perez",
+            "email": "aperez@mail.com",
+            "telefono": "3332211",
+            "contrasenha": "andres1234",
+            "roles": [
+                {"id": 1},
+                {"id": 2}
+                ],
+            "registration": "2022-09-25",
+            "enable": 1
+        },
+        {
+            "id": 2,
+            "nombre": "Carmen",
+            "apellidos": "Garcias Gonzales",
+            "email": "cgarcias@mail.com",
+            "telefono": "3214589",
+            "contrasenha": "carmen1234",
+            "roles": [
+                {"id": 2}
+                ],
+            "registration": "2022-09-26",
+            "enable": 0
+        }
+        ],
+    "registration": "2022-09-25",
+    "enable": 1
+}

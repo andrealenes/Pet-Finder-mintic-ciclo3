@@ -52,6 +52,6 @@ public class Mascota {
     
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinColumn(nullable = false)   
-    private List<Usuario> propietarios;
+    private List<Usuario> usuarios;
     
 }

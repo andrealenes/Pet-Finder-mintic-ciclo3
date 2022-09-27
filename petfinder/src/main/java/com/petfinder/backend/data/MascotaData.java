@@ -24,6 +24,6 @@ public class MascotaData {
     private Date fecha_perdida;
     private String descripcion;
     private String foto;
-    private List<UsuarioData> propietarios;
+    private List<UsuarioData> usuarios;
 
 }
