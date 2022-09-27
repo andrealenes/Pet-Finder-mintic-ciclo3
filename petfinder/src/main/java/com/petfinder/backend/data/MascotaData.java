@@ -22,6 +22,7 @@ public class MascotaData {
     private String raza;
     private String sexo;
     private Date fecha_perdida;
+    private String ubicacion;
     private String descripcion;
     private String foto;
     private List<UsuarioData> usuarios;

@@ -43,6 +43,9 @@ public class Mascota {
     
     @Column(nullable = false)
     private Date fecha_perdida;
+
+    @Column(nullable = false)
+    private String ubicacion;
     
     @Column(nullable = false)
     private String descripcion;
